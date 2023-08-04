@@ -1,0 +1,247 @@
+Shading Type:
+- lambert
+- blinn
+Color Palatte:
+  Basic Color:
+    Salmon:
+    - 0.98
+    - 0.502
+    - 0.447
+    Rose_Bud:
+    - 0.988
+    - 0.729
+    - 0.701
+    Red:
+    - 1
+    - 0
+    - 0
+    Radical_Red:
+    - 1.000
+    - 0.458
+    - 0.485
+    Burnt_Orange:
+    - 0.953
+    - 0.443
+    - 0.2
+    Hot_Pink:
+    - 1.0
+    - 0.698
+    - 0.458
+    Orange:
+    - 1
+    - 0.644
+    - 0
+    Golden_Tainai:
+    - 1.0
+    - 0.803
+    - 0.458
+    Yellow:
+    - 1
+    - 1
+    - 0
+    Milan:
+    - 0.98
+    - 0.956
+    - 0.513
+    Electric_Lime:
+    - 0.823
+    - 1
+    - 0
+    Honeysuckle:
+    - 0.87
+    - 1.0
+    - 0.298
+    Yellow_Green:
+    - 0.519
+    - 0.812
+    - 0.207
+    Feijoa:
+    - 0.67
+    - 0.827
+    - 0.45
+    Kelly_Green:
+    - 0.275
+    - 0.62
+    - 0
+    Mantis:
+    - 0.478
+    - 0.733
+    - 0.298
+    Green:
+    - 0
+    - 0.5
+    - 0
+    Fruit_Salad:
+    - 0.298
+    - 0.65
+    - 0.298
+    Surfie_Green:
+    - 0.02
+    - 0.439
+    - 0.455
+    Cadet_Blue:
+    - 0.313
+    - 0.607
+    - 0.615
+    Boston_Blue:
+    - 0.239
+    - 0.569
+    - 0.643
+    Glacier:
+    - 0.466
+    - 0.698
+    - 0.749
+    Robin_Egg_Blue:
+    - 0.0
+    - 0.8
+    - 0.8
+    Medium_Turquoise:
+    - 0.388
+    - 0.784
+    - 0.811
+    Navy_Blue:
+    - 0
+    - 0.4
+    - 0.8
+    Picton_Blue:
+    - 0.317
+    - 0.572
+    - 0.807
+    Medium_Blue:
+    - 0
+    - 0
+    - 0.8
+    Neon_Blue:
+    - 0.36
+    - 0.36
+    - 0.941
+    Persian_Indigo:
+    - 0.2
+    - 0
+    - 0.4
+    Ce_Soir:
+    - 0.521
+    - 0.36
+    - 0.678
+    Purple:
+    - 0.5
+    - 0
+    - 0.5
+    Violet_Blue:
+    - 0.643
+    - 0.305
+    - 0.619
+    Magenta:
+    - 1
+    - 0
+    - 1
+    Fuchsia_Pink:
+    - 1.0
+    - 0.556
+    - 0.996
+    Skin1:
+    - 1
+    - 0.67
+    - 0.469
+    Skin2:
+    - 1
+    - 0.685
+    - 0.55
+    Skin3:
+    - 0.6
+    - 0.298
+    - 0.161
+    Skin4:
+    - 0.941
+    - 0.847
+    - 0.828
+    Black:
+    - 0
+    - 0
+    - 0
+    Dim_Gray:
+    - 0.25
+    - 0.25
+    - 0.25
+    Gray:
+    - 0.5
+    - 0.5
+    - 0.5
+    Silver:
+    - 0.75
+    - 0.75
+    - 0.75
+    White:
+    - 1.00
+    - 1.00
+    - 1.00
+  Trans Color:
+    Basic_Red:
+    - 1.00
+    - 0.40
+    - 0.40
+    Basic_Pink:
+    - 1.00
+    - 0.40
+    - 0.80
+    Basic_Purple:
+    - 0.80
+    - 0.40
+    - 1.00
+    Basic_Darkpurple:
+    - 0.50
+    - 0.40
+    - 1.00
+    Basic_Blue:
+    - 0.40
+    - 0.60
+    - 1.00
+    Basic_Lightblue:
+    - 0.40
+    - 0.90
+    - 1.00
+    Basic_Lightgreen:
+    - 0.40
+    - 1.00
+    - 0.70
+    Basic_Green:
+    - 0.60
+    - 1.00
+    - 0.40
+    Basic_Yellow:
+    - 1.00
+    - 0.90
+    - 0.40
+    Basic_Orange:
+    - 1.00
+    - 0.90
+    - 0.40
+    Basic_Skin:
+    - 1.00
+    - 0.685
+    - 0.55
+    Basic_Black:
+    - 0.00
+    - 0.00
+    - 0.00
+    Dim_Gray:
+    - 0.25
+    - 0.25
+    - 0.25
+    Basic_Gray:
+    - 0.50
+    - 0.50
+    - 0.50
+    Basic_Silver:
+    - 0.75
+    - 0.75
+    - 0.75
+    White:
+    - 1.00
+    - 1.00
+    - 1.00
+  
+    
+
+   
+    
