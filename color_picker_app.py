@@ -121,7 +121,8 @@ class ColorPicker(QtWidgets.QWidget):
             trans (bool): to send trans to check if have trans or not
         """
         i=0
-        rows= math.ceil(float(len(color_list)) / columns)
+        rows_from_len = float(len(color_list)) / columns
+        rows= int(math.ceil(rows_from_len))
         for row in range(rows):
             for column in range(columns):
                 self.btn_color=color_list.values()
