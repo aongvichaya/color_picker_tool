@@ -94,13 +94,6 @@
            </property>
           </widget>
          </item>
-         <item>
-          <widget class="QPushButton" name="color_gpu_btn">
-           <property name="text">
-            <string>Color GPU</string>
-           </property>
-          </widget>
-         </item>
         </layout>
        </widget>
       </item>
