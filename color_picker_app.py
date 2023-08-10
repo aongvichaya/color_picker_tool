@@ -35,6 +35,7 @@ from snow.common.lib import web_browser
 from snow.common.lib import yaml_rw
 from snow.maya.lib.widgets import Maya_Main_Window
 from snow.common.lib import code_logging
+from snow.maya.tools.color_gpu import color_gpu
 import color_picker_helper as helper
 
 #Global Var
@@ -77,6 +78,8 @@ class ColorPicker(QtWidgets.QWidget):
         self.window.manual_btn.clicked.connect(self.open_manual)
         self.window.del_unused_nodes_btn.clicked.connect(self.delete_nodes)
         self.window.return_prev_btn.clicked.connect(self.return_prev_shd)
+        self.window.color_gpu_btn.clicked.connect(self.color_gpu)
+
         
     def open_manual(self):
         """
@@ -109,6 +112,11 @@ class ColorPicker(QtWidgets.QWidget):
         """to return shd to orignal shade from reference
         """
         helper.return_original_shd()
+    
+    def color_gpu(self):
+        """to generate color for gpu
+        """
+        color_gpu.color_gpu()
     
     def create_button(self,columns,color_list,grpbox,grpbox_layout,trans):
         """To create button using for loop with rows and columns as range to add button in style of row and column
