@@ -1,6 +1,19 @@
-import maya.cmds as cmds
-import pymel.core as pm
+################################################################################
+## Color Picker Helper
+## Created by Aong Pipeline, July 2023
+##
+## Description
+## Modules for create shader and utilities for Color Picker Tool
+## 
+################################################################################
 
+# 2023/08/18, Aong, Update return to preview shade now support both reference node and import 
+
+# Standard Lib
+import maya.cmds as cmds
+import maya.mel as mel
+
+# Snow Modules
 from snow.common.lib import code_logging
 from snow.maya.tools.assign_shade import assign_shade
 
@@ -36,7 +49,6 @@ def create_shader(shd_name, meshes, trans, node_type,color):
             cmds.setAttr('{0}.transparency'.format(material), 0.5, 0.5, 0.5, type="double3")
         cmds.sets(meshes, forceElement=shd_grp)
         
-
     else:
     # select exists color shade node and assign to geo
         logger.info('[{}] Color is already created.'.format(shd_name))
@@ -48,15 +60,14 @@ def delete_unused_nodes():
     """_to delete unused nodes_
     """
     logger.info('Deleting Unused Nodes')
-    pm.mel.eval('MLdeleteUnused;')
+    mel.eval('MLdeleteUnused;')
 
 
 def return_original_shd(*args):
     """Return to preview shade from reference
     """
-    listObj=pm.ls(sl=True)[0]
-    if 'Grp' in listObj:
-        assign_shade.assign_to_selecting(shd_type="preview")       
-    else : 
-        assign_shade.assign_to_selecting(only_selected_geo=True, shd_type="preview")
-    pass    
+    sel = cmds.ls(sl=1, dag=1, type='mesh')
+    if any(cmds.referenceQuery(node,isNodeReferenced=True) for node in sel):
+        assign_shade.assign_to_selecting(only_selected_geo=True,shd_type="preview")
+    else:
+        assign_shade.execute(only_selected_geo=True,shade_type="preview")    

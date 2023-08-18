@@ -8,9 +8,8 @@
 ################################################################################
 
 #Standard Lib
-import sys,os
+import os
 import maya.cmds as cmds
-import pymel.core as pm
 import math
 
 ##GUI Modules
@@ -40,8 +39,7 @@ import color_picker_helper as helper
 
 #Global Var
 logger = code_logging.create_log(__name__)
-curr_path = (__file__)
-module_path = os.path.abspath(os.path.join(curr_path, "../"))
+module_path = os.path.abspath(os.path.join(__file__, "../"))
 YAML_PATH = '{}/color_shd_list.yml'.format(module_path)
 ICON_PATH = 'P:/pipeline/icons'
 MANUAL_URL = 'https://igloostudioth.atlassian.net/l/cp/eU8pCMXn'
