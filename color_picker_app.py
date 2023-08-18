@@ -31,7 +31,7 @@ except:
 
 ##Snow Modules
 from snow.common.lib import web_browser
-from snow.common.lib import yaml_rw
+from snow.common.lib import config as snow_config
 from snow.maya.lib.widgets import Maya_Main_Window
 from snow.common.lib import code_logging
 from snow.maya.tools.color_gpu import color_gpu
@@ -40,11 +40,12 @@ import color_picker_helper as helper
 #Global Var
 logger = code_logging.create_log(__name__)
 module_path = os.path.abspath(os.path.join(__file__, "../"))
-YAML_PATH = '{}/color_shd_list.yml'.format(module_path)
+YAML_PATH = snow_config.get_tool_config(
+                                module=__file__,
+                                filename='color_shd_list.yaml')
 ICON_PATH = 'P:/pipeline/icons'
 MANUAL_URL = 'https://igloostudioth.atlassian.net/l/cp/eU8pCMXn'
-data = yaml_rw.read(YAML_PATH)
-
+data = snow_config.yaml.read(YAML_PATH)
 
 class ColorPicker(QtWidgets.QWidget):
     def __init__(self, parent= None):
